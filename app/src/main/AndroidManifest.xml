@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LearnNote">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.LearnNote">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".cours.NoteActivity" />
+        <activity android:name=".cours.CoursActivity" />
+        <activity android:name=".cours.ViolinNotesActivity" />
+        <activity android:name=".cours.RhythmActivity" />
+        <activity android:name=".cours.RhythmSilenceActivity" />
+        <activity android:name=".Metronome.MetronomeActivity" />
+        <activity android:name=".jeux.JeuxActivity" />
+        <activity android:name=".jeux.solfege.SolfegeActivity" />
+        <activity android:name=".jeux.solfege.SolfegeZenActivity" />
+        <activity android:name=".jeux.solfege.LectureExpressActivity" />
+        <activity android:name=".jeux.JeuxRythmeActivity" />
+        <activity android:name=".jeux.ReconnaitreNoteActivity" />
+        <activity android:name=".partitions.PartitionsActivity" />
+        <activity android:name=".partitions.CreerPartitionActivity" />
+        <activity android:name=".partitions.LecturePartitionActivity" />
+    </application>
+
+</manifest>
